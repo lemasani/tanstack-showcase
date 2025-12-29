@@ -18,7 +18,7 @@ export function AppSidebar() {
   const { location } = useRouterState()
 
   return (
-    <Sidebar>
+    <Sidebar collapsible='icon'>
       <SidebarHeader>Tanstack Showcase</SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
@@ -32,7 +32,7 @@ export function AppSidebar() {
                 return (
                   <SidebarMenuItem key={item.title}>
                     <SidebarMenuButton
-                      asChild
+                      
                       className={clsx(
                         isActive && 'bg-muted text-primary'
                       )}
